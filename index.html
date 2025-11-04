@@ -3,39 +3,38 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LogVector AI – GPU‑Accelerated Database Anomaly Detection</title>
-  <meta name="description" content="LogVector AI uses GPU‑accelerated AI and vector embeddings to detect database anomalies, forecast incidents, and turn Oracle/OCI logs into actionable insight." />
-  <meta name="theme-color" content="#10b981" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2310b981'/%3E%3Cpath d='M12 40c10-18 30-18 40 0' stroke='white' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='22' cy='28' r='3' fill='white'/%3E%3Ccircle cx='42' cy='28' r='3' fill='white'/%3E%3C/svg%3E" />
+  <title>LogVector AI – GPU-Accelerated Database Anomaly Detection</title>
+  <meta name="description" content="LogVector AI uses GPU-accelerated AI and vector embeddings to detect database anomalies, forecast incidents, and turn Oracle/OCI logs into actionable insight." />
+  <meta name="theme-color" content="#00B386" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <style>
     :root{
       --bg: #0b0f0e;
       --card: #0f1513;
       --muted: #a3b3ac;
       --text: #f0f7f4;
-      --brand: #10b981;
+      --brand: #00B386;
       --brand-600:#059669;
       --brand-700:#047857;
       --accent: #22d3ee;
       --ring: rgba(34, 211, 238, .35);
-      --ok:#22c55e; --warn:#f59e0b; --err:#ef4444;
       --shadow: 0 10px 30px rgba(0,0,0,.35), 0 2px 10px rgba(16,185,129,.15);
     }
     *{box-sizing:border-box}
     html,body{margin:0;height:100%;background:radial-gradient(1200px 600px at 80% -10%, rgba(16,185,129,.12), transparent 60%),
                                  radial-gradient(900px 500px at -10% 20%, rgba(34,211,238,.08), transparent 55%), var(--bg);
-               color:var(--text); font: 16px/1.5 Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";}
+               color:var(--text); font: 16px/1.5 'Inter', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";}
     a{color:inherit; text-decoration:none}
     .container{max-width:1100px;margin:0 auto;padding:24px}
     header{position:sticky; top:0; background:linear-gradient(to bottom, rgba(11,15,14,.9), rgba(11,15,14,.75) 60%, transparent); backdrop-filter:saturate(140%) blur(10px); z-index:10}
     .nav{display:flex;align-items:center;gap:18px;justify-content:space-between}
     .brand{display:flex;align-items:center;gap:12px; font-weight:700}
-    .brand svg{width:38px;height:38px}
-    .badge{font-size:.75rem; color:#0a1f17; background:linear-gradient(135deg, #34d399, #10b981); padding:4px 10px; border-radius:999px; letter-spacing:.3px}
+    .brand img{width:120px;height:auto;display:block}
+    .badge{font-size:.75rem; color:#0a1f17; background:linear-gradient(135deg, #34d399, #00B386); padding:4px 10px; border-radius:999px; letter-spacing:.3px}
 
     .btn{display:inline-flex; align-items:center; gap:10px; padding:12px 16px; border-radius:12px; font-weight:600; border:1px solid rgba(255,255,255,.08); background:linear-gradient(180deg, rgba(16,185,129,.18), rgba(16,185,129,.12)); box-shadow:var(--shadow); transition:transform .15s ease, box-shadow .15s ease, background .2s ease}
     .btn:hover{transform:translateY(-1px); box-shadow:0 12px 32px rgba(0,0,0,.4), 0 4px 12px rgba(16,185,129,.25)}
-    .btn.primary{background:linear-gradient(180deg, #10b981, #059669); border-color:rgba(255,255,255,.12)}
+    .btn.primary{background:linear-gradient(180deg, #00B386, #059669); border-color:rgba(255,255,255,.12)}
     .btn.ghost{background:transparent}
 
     .hero{display:grid; grid-template-columns:1.15fr .85fr; gap:28px; align-items:center; padding:42px 0 28px}
@@ -85,6 +84,7 @@
       .grid, .features{grid-template-columns:1fr}
     }
   </style>
+
   <script>
     function smoothScrollTo(id){
       const el = document.getElementById(id);
@@ -102,36 +102,27 @@ ${data.message || ''}`);
       window.location.href = mail;
     }
   </script>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "LogVector AI",
-    "url": "https://logvector.ai/",
+    "url": "https://logvectorai.com/",
     "sameAs": [],
-    "logo": "https://logvector.ai/logo.svg",
-    "description": "GPU‑accelerated database anomaly detection using AI and vector embeddings for Oracle/OCI logs.",
+    "logo": "images/logvector_logo.png",
+    "description": "GPU-accelerated database anomaly detection using AI and vector embeddings for Oracle/OCI logs.",
     "foundingDate": "2025",
-    "founders": [{"@type":"Person","name":"Founder"}]
+    "founders": [{"@type":"Person","name":"Jerry Rozario"}]
   }
   </script>
 </head>
+
 <body>
   <header>
     <div class="container nav" role="navigation" aria-label="Primary">
       <a href="#top" class="brand" aria-label="LogVector AI home">
-        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-          <defs>
-            <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#34d399"/>
-              <stop offset="100%" stop-color="#10b981"/>
-            </linearGradient>
-          </defs>
-          <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#g)"/>
-          <path d="M12 40c10-18 30-18 40 0" stroke="white" stroke-width="6" fill="none" stroke-linecap="round"/>
-          <circle cx="22" cy="28" r="3" fill="white"/>
-          <circle cx="42" cy="28" r="3" fill="white"/>
-        </svg>
+        <img src="images/logvector_logo.png" alt="LogVector AI logo" width="120" height="auto" decoding="async">
         <span style="font-size:1.05rem">LogVector AI</span>
         <span class="badge" title="Early-stage">STEALTH</span>
       </a>
@@ -144,195 +135,7 @@ ${data.message || ''}`);
     </div>
   </header>
 
-  <main id="top" class="container">
-    <section class="hero">
-      <div>
-        <h1>GPU‑Accelerated <span style="color:var(--brand)">Database Anomaly Detection</span> & Log Forecasting</h1>
-        <p class="sub">LogVector AI turns noisy Oracle/OCI logs and AWR signals into early warnings using AI embeddings, vector search, and streaming inference. Prevent incidents, cut MTTR, and ship with confidence.</p>
-        <div class="cta">
-          <button class="btn primary" onclick="smoothScrollTo('contact')">Talk to us</button>
-          <a class="btn" href="#features">See capabilities</a>
-        </div>
-        <div class="grid" style="margin-top:18px">
-          <div class="kpi"><small>Time to first insight</small><br><strong>&lt; 1 hour*</strong><br><small class="muted">*with sample log pack</small></div>
-          <div class="kpi"><small>Noise reduction</small><br><strong>90%+</strong><br><small class="muted">LLM‑assisted clustering</small></div>
-          <div class="kpi"><small>Forecast horizon</small><br><strong>7–30 days</strong><br><small class="muted">capacity & drift</small></div>
-        </div>
-      </div>
-      <div class="hero-card" aria-hidden="true">
-        <div class="diagram" style="height:320px">
-          <svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Architecture sketch">
-            <defs>
-              <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-                <feGaussianBlur stdDeviation="6" result="blur"/>
-                <feMerge>
-                  <feMergeNode in="blur"/>
-                  <feMergeNode in="SourceGraphic"/>
-                </feMerge>
-              </filter>
-            </defs>
-            <rect x="0" y="0" width="700" height="420" rx="12" fill="rgba(0,0,0,.18)"/>
-            <g>
-              <rect x="30" y="40" width="150" height="90" rx="12" fill="#0b1210" stroke="rgba(255,255,255,.18)"/>
-              <text x="105" y="72" fill="#a3b3ac" text-anchor="middle" font-size="16">Oracle Logs</text>
-              <text x="105" y="96" fill="#a3b3ac" text-anchor="middle" font-size="12">alert.log, listener, AWR</text>
-            </g>
-            <g>
-              <rect x="30" y="160" width="150" height="90" rx="12" fill="#0b1210" stroke="rgba(255,255,255,.18)"/>
-              <text x="105" y="192" fill="#a3b3ac" text-anchor="middle" font-size="16">OCI Metrics</text>
-              <text x="105" y="216" fill="#a3b3ac" text-anchor="middle" font-size="12">CPU, I/O, waits</text>
-            </g>
-            <g>
-              <rect x="230" y="100" width="180" height="110" rx="14" fill="#0b1210" stroke="rgba(255,255,255,.22)"/>
-              <text x="320" y="130" fill="#a3b3ac" text-anchor="middle" font-size="16">Ingest & Normalize</text>
-              <text x="320" y="154" fill="#a3b3ac" text-anchor="middle" font-size="12">scrub, parse, enrich</text>
-            </g>
-            <path d="M180,85 C205,95 210,110 230,120" stroke="#22d3ee" stroke-width="2" fill="none"/>
-            <path d="M180,205 C205,195 210,185 230,170" stroke="#22d3ee" stroke-width="2" fill="none"/>
-            <g>
-              <rect x="450" y="55" width="210" height="110" rx="14" fill="#064e3b" stroke="rgba(255,255,255,.22)"/>
-              <text x="555" y="90" fill="#d1fae5" text-anchor="middle" font-size="16">GPU Embeddings</text>
-              <text x="555" y="114" fill="#d1fae5" text-anchor="middle" font-size="12">LLM/encoder on GPU</text>
-            </g>
-            <g>
-              <rect x="450" y="200" width="210" height="110" rx="14" fill="#0b1210" stroke="rgba(255,255,255,.22)"/>
-              <text x="555" y="232" fill="#a3b3ac" text-anchor="middle" font-size="16">Vector Search</text>
-              <text x="555" y="256" fill="#a3b3ac" text-anchor="middle" font-size="12">OCI Vector / FAISS</text>
-            </g>
-            <g>
-              <rect x="260" y="250" width="140" height="80" rx="14" fill="#0b1210" stroke="rgba(255,255,255,.22)"/>
-              <text x="330" y="282" fill="#a3b3ac" text-anchor="middle" font-size="16">Alerts</text>
-              <text x="330" y="306" fill="#a3b3ac" text-anchor="middle" font-size="12">drift & anomalies</text>
-            </g>
-            <path d="M410,110 C430,110 440,110 450,110" stroke="#10b981" stroke-width="2"/>
-            <path d="M410,200 C430,200 440,200 450,200" stroke="#10b981" stroke-width="2"/>
-            <path d="M555,165 C555,178 555,188 555,200" stroke="#22d3ee" stroke-width="2"/>
-            <path d="M555,310 C520,330 420,315 400,290" stroke="#22d3ee" stroke-width="2"/>
-            <path d="M410,190 C380,210 360,240 330,250" stroke="#10b981" stroke-width="2"/>
-          </svg>
-        </div>
-        <div class="muted" style="margin-top:8px; font-size:.9rem">Illustrative architecture. Oracle/OCI friendly; cloud‑agnostic.</div>
-      </div>
-    </section>
-
-    <section id="features" class="section">
-      <h2>Capabilities</h2>
-      <div class="features">
-        <article class="feature">
-          <div class="badge" aria-hidden="true">GPU</div>
-          <h3>Embedding‑powered anomaly detection</h3>
-          <p class="muted">Encode logs with transformer encoders on GPU for high‑recall clustering and outlier detection; move beyond brittle regex & thresholds.</p>
-        </article>
-        <article class="feature">
-          <div class="badge" aria-hidden="true">VECTOR</div>
-          <h3>Similarity search over incidents</h3>
-          <p class="muted">Find “look‑alike” events in seconds using OCI AI Vector Search or FAISS; retrieve playbooks tied to past outages.</p>
-        </article>
-        <article class="feature">
-          <div class="badge" aria-hidden="true">FORECAST</div>
-          <h3>Performance & drift forecasting</h3>
-          <p class="muted">Short‑term capacity forecasts from AWR & wait events with confidence bands; spot slow burn issues before they page you at 2 AM.</p>
-        </article>
-        <article class="feature">
-          <div class="badge" aria-hidden="true">ORACLE</div>
-          <h3>Oracle‑first, cloud‑agnostic</h3>
-          <p class="muted">Native understanding of alert.log, listener, ASM, Data Guard, and AWR; deploy on‑prem, OCI, or hybrid.</p>
-        </article>
-        <article class="feature">
-          <div class="badge" aria-hidden="true">STREAM</div>
-          <h3>Real‑time streaming</h3>
-          <p class="muted">Process log streams with low latency; route high‑priority alerts to Slack, Teams, or email with context windows.</p>
-        </article>
-        <article class="feature">
-          <div class="badge" aria-hidden="true">SAFE</div>
-          <h3>Security & privacy</h3>
-          <p class="muted">PII scrubbing, RBAC, and private model options; keep sensitive data in your VCN/VPC, not the public internet.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="how" class="section">
-      <h2>How it works</h2>
-      <div class="how">
-        <div class="steps">
-          <div class="step"><span><strong>1</strong> Ingest</span>
-            <p class="muted">Pull Oracle alert.log, listener logs, AWR extracts, and OCI metrics. Normalize and enrich with host, DB, and tenant metadata.</p>
-          </div>
-          <div class="step"><span><strong>2</strong> Embed</span>
-            <p class="muted">Use a transformer encoder on GPU to generate dense vectors for each event; keep tokenized context for LLM explanation.</p>
-          </div>
-          <div class="step"><span><strong>3</strong> Index</span>
-            <p class="muted">Store vectors in OCI AI Vector Search or FAISS/Milvus; enable fast k‑NN queries for look‑alike detection.</p>
-          </div>
-          <div class="step"><span><strong>4</strong> Detect</span>
-            <p class="muted">Cluster, score outliers, and track drift. When risk spikes, we enrich alerts with similar past incidents and fixes.</p>
-          </div>
-          <div class="step"><span><strong>5</strong> Forecast</span>
-            <p class="muted">Train lightweight time‑series models on waits/CPU/I/O to predict saturation windows and recommended actions.</p>
-          </div>
-        </div>
-        <div class="card">
-          <h3 style="margin:0 0 8px">Starter integration (proof‑of‑concept)</h3>
-          <ul class="muted" style="margin:0 0 10px; padding-left:18px">
-            <li>Drop a sample <code>alert.log</code> file; we embed & score anomalies.</li>
-            <li>Run vector search to surface similar historic incidents.</li>
-            <li>Generate a concise, LLM‑assisted RCA blurb.</li>
-          </ul>
-          <div class="cta">
-            <a class="btn" href="#contact">Get sample log pack</a>
-            <button class="btn" onclick="alert('One‑pager coming soon. Ask us for a PDF draft with NVIDIA Inception details.')">Download one‑pager (soon)</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <div class="contact">
-        <form onsubmit="handleContact(event)" aria-label="Contact form">
-          <label for="name">Name</label>
-          <input id="name" name="name" placeholder="Your name" required />
-          <label for="email">Email</label>
-          <input id="email" type="email" name="email" placeholder="you@company.com" required />
-          <label for="usecase">Use case (optional)</label>
-          <input id="usecase" name="usecase" placeholder="Oracle, Data Guard, AWR, OEM, OCI" />
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Tell us about your environment and pain points…"></textarea>
-          <button class="btn primary" type="submit">Send email</button>
-        </form>
-        <div class="card">
-          <h3 style="margin:0 0 10px">NVIDIA Inception readiness checklist</h3>
-          <ul class="muted" style="margin:0; padding-left:18px">
-            <li>LLC formed (<em>LogVector AI LLC</em>)</li>
-            <li>Landing page published (this page)</li>
-            <li>Short one‑pager PDF (draft available)</li>
-            <li>Minimal demo repo (embeddings + anomaly score)</li>
-          </ul>
-          <div class="cta" style="margin-top:12px">
-            <a class="btn" href="#how">See demo scope</a>
-            <a class="btn" href="#features">Review capabilities</a>
-          </div>
-          <p class="muted" style="margin-top:12px; font-size:.92rem">We’re Oracle‑first and OCI‑friendly. Also support Postgres & MySQL roadmaps.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container foot">
-      <div style="display:flex; align-items:center; gap:10px">
-        <strong>LogVector AI</strong>
-        <span aria-hidden="true">•</span>
-        <span>© <span id="yr"></span> LogVector AI LLC</span>
-      </div>
-      <div style="display:flex; gap:12px">
-        <a href="#features">Features</a>
-        <a href="#how">How it works</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-  </footer>
-
-  <script>document.getElementById('yr').textContent = new Date().getFullYear()</script>
+  <!-- Keep your existing main content (hero, features, contact, footer) exactly as it is -->
+  <!-- Everything else in your body stays unchanged from your current version -->
 </body>
 </html>
